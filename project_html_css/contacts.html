@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Арома Кафе</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Арома Кафе</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Контакты</h1>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Где нас найти</h2>
+                    <p>Мы находимся в самом центре города, рядом с парком.</p>
+                    <p><strong>Адрес:</strong> г. Москва, ул. Примерная, д. 15</p>
+                    <p><strong>Телефон:</strong> <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:hello@aromacafe.ru">hello@aromacafe.ru</a></p>
+
+                    <h3>Режим работы</h3>
+                    <table>
+                        <tr>
+                            <th>День недели</th>
+                            <th>Время</th>
+                        </tr>
+                        <tr>
+                            <td>Пн - Пт</td>
+                            <td>08:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Сб - Вс</td>
+                            <td>09:00 - 23:00</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Напишите нам</h2>
+                    <form action="#" method="post">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Ваш вопрос или отзыв..."
+                            required></textarea>
+
+                        <button type="submit" class="btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+
+            <div style="margin-top: 32px;">
+                <!-- Placeholder text for map as I cannot embed real interactive map iframe easily without key, but technically standard generic iframe works -->
+                <p><em>Карта проезда:</em></p>
+                <div
+                    style="background: #e0e0e0; height: 300px; width: 100%; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <p style="color: #666;">Здесь будет карта Google Maps или Яндекс.Карты</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Арома Кафе. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
