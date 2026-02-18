@@ -36,7 +36,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -87,7 +87,9 @@ section {
     padding: var(--spacing-xl) 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin-bottom: var(--spacing-md);
     color: var(--primary-color);
 }
@@ -109,7 +111,7 @@ p {
 /* Hero Section */
 .hero {
     background-color: var(--secondary-color);
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -151,7 +153,7 @@ p {
     background: var(--white);
     padding: var(--spacing-md);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -164,6 +166,7 @@ p {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    object-position: top center;
     border-radius: 4px;
     margin-bottom: var(--spacing-md);
 }
@@ -173,7 +176,7 @@ p {
     background-color: var(--white);
     border-radius: 12px;
     padding: var(--spacing-lg);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .products-grid {
@@ -187,12 +190,12 @@ p {
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .product-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .product-image {
@@ -216,7 +219,7 @@ p {
     border-radius: 20px;
     font-weight: bold;
     font-size: 0.9rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .product-info {
@@ -254,7 +257,7 @@ p {
     background: var(--white);
     padding: var(--spacing-lg);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     flex: 1 1 300px;
     max-width: 400px;
 }
@@ -300,7 +303,8 @@ footer {
     gap: var(--spacing-xl);
 }
 
-.contact-info, .contact-form-wrapper {
+.contact-info,
+.contact-form-wrapper {
     flex: 1;
     min-width: 300px;
 }
@@ -311,7 +315,8 @@ form {
     gap: var(--spacing-md);
 }
 
-input, textarea {
+input,
+textarea {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -319,7 +324,8 @@ input, textarea {
     font-size: 1rem;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: 2px solid var(--secondary-color);
     border-color: transparent;
 }
@@ -330,7 +336,8 @@ table {
     margin-top: var(--spacing-md);
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
     text-align: left;
@@ -352,15 +359,16 @@ th, td {
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Mobile menu implementation usually requires JS, but we can do a simple vertical stack or just hide for simplicity in pure CSS effectively without checkbox hack or similar */
+        display: none;
+        /* Mobile menu implementation usually requires JS, but we can do a simple vertical stack or just hide for simplicity in pure CSS effectively without checkbox hack or similar */
     }
-    
+
     /* Simple mobile specific adjustment -> Stack them for this assignment */
     nav {
         flex-direction: column;
         gap: var(--spacing-md);
     }
-    
+
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -368,8 +376,17 @@ th, td {
         text-align: center;
         width: 100%;
     }
-    
+
     .hero h1 {
         font-size: 2rem;
+    }
+
+    .about-image {
+        order: -1;
+        width: 100%;
+    }
+
+    .about-text {
+        order: 1;
     }
 }
