@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О нас - Арома Кафе</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,8 +17,14 @@
                 <a href="index.html" class="logo">Арома Кафе</a>
                 <ul class="nav-links">
                     <li><a href="index.html">Главная</a></li>
+                    <li><a href="blog.html">Блог</a></li>
                     <li><a href="about.html">О нас</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
+                    <li>
+                        <a href="index.html" class="cart-link">
+                            <i class="fa-solid fa-bag-shopping"></i> Корзина <span class="cart-badge" id="cart-count" style="display:none;">0</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -32,10 +39,10 @@
                         кофемашины и большой мечты — варить самый вкусный кофе в городе.</p>
                     <p>Сегодня мы — это команда увлеченных профессионалов. Мы верим, что чашка хорошего кофе может
                         сделать день лучше. Наши ценности:</p>
-                    <ul>
-                        <li><strong>Качество:</strong> Мы используем только зерна класса Specialty.</li>
-                        <li><strong>Сервис:</strong> Мы любим наших гостей и всегда рады видеть вас.</li>
-                        <li><strong>Честность:</strong> Мы открыты и прозрачны во всем, что делаем.</li>
+                    <ul class="values-list">
+                        <li><i class="fa-solid fa-award"></i> <strong>Качество:</strong> Мы используем только зерна класса Specialty.</li>
+                        <li><i class="fa-solid fa-heart"></i> <strong>Сервис:</strong> Мы любим наших гостей и всегда рады видеть вас.</li>
+                        <li><i class="fa-solid fa-handshake"></i> <strong>Честность:</strong> Мы открыты и прозрачны во всем, что делаем.</li>
                     </ul>
                 </div>
                 <div class="about-image">
@@ -44,7 +51,7 @@
             </div>
         </section>
 
-        <section class="container">
+        <section class="container team-section">
             <h2>Наша команда</h2>
             <div class="services-grid">
                 <article class="service-card">
